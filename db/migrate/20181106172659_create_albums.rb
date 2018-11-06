@@ -1,7 +1,7 @@
 class CreateAlbums < ActiveRecord::Migration[5.2]
   def change
     create_table :albums do |t|
-      t.int :album_id
+      t.integer :album_id
       t.string :name
       t.text :description
       t.decimal :price
