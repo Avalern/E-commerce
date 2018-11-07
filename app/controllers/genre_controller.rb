@@ -1,6 +1,6 @@
 class GenreController < ApplicationController
   def index
-    @genres = Genre.order(:genre_name)
+    @genres = Genre.all
   end
 
   def show

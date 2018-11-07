@@ -1,3 +1,3 @@
 ActiveAdmin.register Genre do
-  permit_params :genre_id, :genre_name
+  permit_params :genre_name, :genre_id
 end
