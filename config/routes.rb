@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resources :album, only: [:index, :show]
   resources :genre, only: [:index, :show]
   root to: 'genre#index'
+  get 'album' => 'album#index'
 end
