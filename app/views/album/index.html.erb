@@ -1,5 +1,11 @@
 <h1>Albums</h1>
 <% @albums.each do |album| %>
-  <strong>Name:</strong> <% album.name %>
+<p>
+  <strong>Name:</strong> <%= album.name %>
+<p>
+  <strong>Price</strong> <%= album.price %>
+<p>
+  <strong>Image:</strong> <%= image_tag album.image.url, :size => "300x300" %>
+<p>
   <br>
 <% end %>
