@@ -1,6 +1,6 @@
 class AlbumController < ApplicationController
   def index
-    @albums = Album.order(:name)
+    @albums = Album.order(:name).page(params[:page]).per(2)
   end
 
   def show

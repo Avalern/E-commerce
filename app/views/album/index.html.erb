@@ -11,7 +11,7 @@
 <% end %><h1>Albums</h1>
 <% @albums.each do |album| %>
 <p>
-  <strong>Name:</strong> <%= album.name %>
+  <strong>Name:</strong><%= link_to album.name, album %>
 <p>
   <strong>Price</strong> <%= album.price %>
 <p>
@@ -21,3 +21,4 @@
 <p>
   <br>
 <% end %>
+<%= paginate @albums%>

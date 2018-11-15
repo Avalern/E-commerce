@@ -41,6 +41,7 @@ gem 'devise'
 gem 'carrierwave'
 gem 'bulma-rails'
 gem 'simple_form'
+gem 'kaminari'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

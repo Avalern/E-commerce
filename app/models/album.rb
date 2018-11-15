@@ -4,9 +4,8 @@ class Album < ApplicationRecord
   has_many :orders, through: :ordered_albums
   mount_uploader :image, ImageUploader
 
-  validates :album_id, presence: true
+  validates :genre_id, presence: true
   validates :name, presence: true
   validates :description, presence: true
   validates :price, presence: true
-  validates :artist_name, presence: true
 end
