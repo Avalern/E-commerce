@@ -1,9 +1,21 @@
-<h1>Albums</h1>
+<% content_for :header do %>
+<section class="hero is-warning">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        View our Albums
+      </h1>
+    </div>
+  </div>
+</section>
+<% end %><h1>Albums</h1>
 <% @albums.each do |album| %>
 <p>
   <strong>Name:</strong> <%= album.name %>
 <p>
   <strong>Price</strong> <%= album.price %>
+<p>
+  <strong>Description</strong> <%= album.description %>
 <p>
   <strong>Image:</strong> <%= image_tag album.image.url, :size => "300x300" %>
 <p>
