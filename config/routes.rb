@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+  resources :search, only: [:index] do
+    collection do
+      get 'result'
+    end
+  end
   resources :album, only: [:index, :show]
   resources :genre, only: [:index, :show]
   resources :page, only: [:show]

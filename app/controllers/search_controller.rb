@@ -3,5 +3,6 @@ class SearchController < ApplicationController
   end
 
   def result
+    @alb = Album.where('name LIKE ?',"%#{params[:q]}%")
   end
 end

@@ -1,2 +1,10 @@
-<h1>Search#result</h1>
-<p>Find me in app/views/search/result.html.erb</p>
+<h2>Search results for :<%= @alb.size %></h2>
+<% if @alb.empty? %>
+  <p>Sorry, no albums like that.</p>
+<%else%>
+  <ul>
+  <% @alb.each do |album| %>
+    <li><%= link_to album.name, album%></li>
+  <% end %>
+  </ul>
+<%end%>
