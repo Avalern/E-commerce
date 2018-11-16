@@ -1,0 +1,14 @@
+
+<p>
+  <strong>Name:</strong><%= link_to album.name, album %>
+</p>
+<p>
+  <strong>Price</strong> <%= album.price %>
+</p>
+<p>
+  <strong>Description</strong> <%= album.description %>
+</p>
+<p>
+  <strong>Image:</strong> <%= image_tag album.image.url, :size => "300x300" %>
+</p>
+  <br>

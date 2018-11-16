@@ -8,17 +8,7 @@
     </div>
   </div>
 </section>
-<% end %><h1>Albums</h1>
-<% @albums.each do |album| %>
-<p>
-  <strong>Name:</strong><%= link_to album.name, album %>
-<p>
-  <strong>Price</strong> <%= album.price %>
-<p>
-  <strong>Description</strong> <%= album.description %>
-<p>
-  <strong>Image:</strong> <%= image_tag album.image.url, :size => "300x300" %>
-<p>
-  <br>
 <% end %>
-<%= paginate @albums%>
+<%= render partial: 'album', collection: @albums %>
+
+<%= paginate @albums %>

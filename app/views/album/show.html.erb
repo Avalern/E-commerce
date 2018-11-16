@@ -1,9 +1,1 @@
-<p>
-  <strong>Name:</strong><%= @album.name %>
-<p>
-  <strong>Price</strong> <%= @album.price %>
-<p>
-  <strong>Description</strong> <%= @album.description %>
-<p>
-  <strong>Image:</strong> <%= image_tag @album.image.url, :size => "300x300" %>
-<p>
+<%= render partial: 'album', object: @album, as: 'album'  %>
