@@ -6,6 +6,9 @@ class OrderedAlbum < ApplicationRecord
   validates :order_id, presence: true
   validates :album_id, presence: true
 
+  before_save :set_unit_price
+	before_save :set_total_price
+
   def unit_price
 		if persisted?
 			self[:unit_price]
