@@ -1,6 +1,6 @@
 class GenreController < ApplicationController
   def index
-    @genres = Genre.all
+    @genres = Genre.joins(:albums).order(:genre_name)
   end
 
   def show

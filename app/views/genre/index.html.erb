@@ -1,5 +1,9 @@
-<h1>Genres</h1>
+<h2>Genres <%=@genres.count%></h2>
+
 <% @genres.each do |genre| %>
-  <strong>Name:</strong> <%= genre.genre_name %>
+  <%= link_to genre_album_index_path(genre) do %>
+    <%= genre.genre_name %>
+    <%= genre.albums.count %>
   <br>
+  <% end %>
 <% end %>
