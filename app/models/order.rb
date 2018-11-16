@@ -4,7 +4,6 @@ class Order < ApplicationRecord
   has_many :albums, through: :ordered_albums
 
   validates :order_id,  presence: true
-  validates :amount_due, presence: true
-  validates :customer_id, presence: true
+  validates :album_id, presence: true
 
 end
