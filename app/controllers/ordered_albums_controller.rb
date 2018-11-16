@@ -1,0 +1,2 @@
+class OrderedAlbumsController < ApplicationController
+end

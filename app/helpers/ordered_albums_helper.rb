@@ -1,0 +1,2 @@
+module OrderedAlbumsHelper
+end
